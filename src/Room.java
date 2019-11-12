@@ -1,27 +1,41 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Room {
-    private String name;
-    private String description;
+    private int xPos, yPos;
+    private String item;
+
+
 
     public Room(){};
 
-    public Room(String name, String description) {
-        this.name = name;
-        this.description = description;
+    public Room(int xPos, int yPos) {
+        this.xPos = xPos;
+        this.yPos = yPos;
     }
 
-    public String getName() {
-        return name;
+    public int getxPos() {
+        return xPos;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setxPos(int xPos) {
+        this.xPos = xPos;
     }
 
-    public String getDescription() {
-        return description;
+    public int getyPos() {
+        return yPos;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setyPos(int yPos) {
+        this.yPos = yPos;
+    }
+
+    public String getItem() {
+        return item;
+    }
+
+    public void setItem(String item) {
+        this.item = item;
     }
 }

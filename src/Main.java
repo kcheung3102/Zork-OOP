@@ -4,15 +4,16 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        GameBoard gameBoard = new GameBoard(int width, int height);
         ArrayList<String> items = new ArrayList<>();
         Collections.addAll(items,"stuff1","stuff2","stuff3");
         Random random = new Random();
         int index = random.nextInt(items.size());
+        GameBoard gameBoard = new GameBoard(int width, int height);
 
+
+        //sets the item in a room
         for(int x = 0; x < width; x++) {
-            gameBoard.setRooms(new Room(x, 3 , "stuff"));
-
+            gameBoard.setRoomItem(random.nextInt(4), random.nextInt(4), );
         }
 
 

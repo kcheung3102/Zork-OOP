@@ -5,6 +5,7 @@ public class GameBoard {
     Room[][] coordinates;
     List<Room> rooms = new ArrayList<>();
 
+    //creates an gameBoard map instance for user
     public GameBoard(int width, int height) {
         coordinates = new Room[width][height];
         for(int i = 0; i < width; i++) {
@@ -29,5 +30,9 @@ public class GameBoard {
 
     public void setCoordinates(Room[][] coordinates) {
         this.coordinates = coordinates;
+    }
+
+    public void setRoomItem(int x, int y, String item){
+        coordinates[x][y].setItem(item);
     }
 }
